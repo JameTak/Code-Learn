@@ -50,6 +50,8 @@ public class frist : MonoBehaviour
 
         bool isBadContion = health <= 50 && mana <=20;
         Debug.Log ("용사의 상태가 나쁩니까? "+ isBadContion);
+
+        //혹시
     
         
 
