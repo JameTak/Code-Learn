@@ -48,10 +48,40 @@ public class frist : MonoBehaviour
         int health = 30;
         int mana = 25;
 
-        bool isBadContion = health <= 50 && mana <=20;
+        // && and 연산자 두 값이 모두 true 일 때만 true 출력
+        //bool isBadContion = health <= 50 && mana <=20;
+        bool isBadContion = health <= 50 || mana <=20;
+        //Debug.Log ("용사의 상태가 나쁩니까? "+ isBadContion);
+        string condition = isBadContion ? "나쁨" : "좋음";
+
+        // ? 연산자 ? 앞에는 bool 값을 넣어야함  : 앞에는 ture 일때 뒤에는 false 일때 나오는 값  
+
         Debug.Log ("용사의 상태가 나쁩니까? "+ isBadContion);
 
-        //혹시
+
+
+
+        // || OR 연산자 하나만 true 면 true 출력
+     
+
+        //4.키워드
+        // int float string bool new List ...
+
+        //5. 조건문 if
+
+        if (condition == "나쁨") {
+            Debug.Log ("플레이어 상태가 나쁘니 아이템을 사용하세요.");
+        }
+           else
+            {
+                Debug.Log ("플레이어 상태가 좋습니다.");
+
+            }
+        }
+}
+
+
+
     
         
 
@@ -60,8 +90,8 @@ public class frist : MonoBehaviour
 
 
         
-    }
+    
 
     // Update is called once per frame
    
-}
+
